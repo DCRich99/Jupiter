@@ -12,11 +12,17 @@
       crossorigin="anonymous"
     ></script>
     <link href="style.css" rel="stylesheet" />
+
+    <script src="js/giphy.js"></script>
+    <script src="js/localStorage.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/logic.js"></script>
+    <script src="js/script.js"></script>
   </head>
   <body>
     <div id="home-screen">
       <div>
-        <h1>MemeWeather</h1>
+        <h1>Jupiter Weather</h1>
         <p>Enter US Zip Code</p>
       </div>
       <div>
@@ -28,9 +34,15 @@
 
     <div id="results-screen">
       <div>
-        <h1>MemeWeather</h1>
+        <h1>Jupiter Weather</h1>
+        <p id="home-button">&#x2190; Home</p>
+        <p id="random-button">Randomize GIF</p>
+        <p id="current-date">27 Mayo 2021</p>
+        <p id="current-zip">90210</p>
       </div>
       <div>
+        <p>Weather</p>
+        <p id="current-description">Description</p>
         <p id="current-temp">63F</p>
         <p id="current-humidity">Humidity: 40%</p>
       </div>
