@@ -8,7 +8,7 @@ let mm = String(today.getMonth() + 1).padStart(2, '0');
 let yyyy = today.getFullYear();
 var today = mm + '/' + dd + '/' + yyyy;
 
-function linkActions() {
+//*function linkActions() {
     $(searchButtonId).click(function () {
       var input = $(searchInputId).val();
       //we parse the input as int to see if its valid
@@ -18,7 +18,7 @@ function linkActions() {
         presentZipError();
       }
     });
-    }
+    //}
 
 function getWeather(zipcode) {
     let queryUrl = 'https://api.openweathermap.org/data/2.5/weather?appidq&zip='+zipCode;
