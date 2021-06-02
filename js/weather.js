@@ -18,6 +18,7 @@ function linkActions() {
         presentZipError();
       }
     });
+    }
 
 function getWeather(zipcode) {
     let queryUrl = 'https://api.openweathermap.org/data/2.5/weather?appidq&zip='+zipCode;
@@ -28,10 +29,12 @@ function getWeather(zipcode) {
     )
     .then (function (response){
         callback (response);
-    })
+    });
+}
 
 
 $(document).on("click", ".historyEntry", function() {
     console.log("clicked history item")
     let thisElement = $(this);
     getWeather(thisElement.text());
+});
