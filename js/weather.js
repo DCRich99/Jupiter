@@ -22,10 +22,10 @@ function linkActions() {
 function getWeather(zipcode) {
     let queryUrl = 'https://api.openweathermap.org/data/2.5/weather?appidq&zip='+zipCode;
     fetch (url)
-    .then (funtion (response){
+    .then (function (response){
         return response.json();
     }
-    })
+    )
     .then (funtion (response){
         callback (response);
     })
