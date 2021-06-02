@@ -26,7 +26,7 @@ function getWeather(zipcode) {
         return response.json();
     }
     )
-    .then (funtion (response){
+    .then (function (response){
         callback (response);
     })
 
@@ -35,5 +35,3 @@ $(document).on("click", ".historyEntry", function() {
     console.log("clicked history item")
     let thisElement = $(this);
     getWeather(thisElement.text());
-})
-}
