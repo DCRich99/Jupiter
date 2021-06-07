@@ -1,3 +1,5 @@
+# Deployed url 
+[https://rootsroy.github.io/Jupiter/](https://rootsroy.github.io/Jupiter/)
 # Jupiter
 
 Weather - Giphy App.
